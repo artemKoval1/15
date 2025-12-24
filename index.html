@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlanIt</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-circle circle-1"></div>
+    <div class="bg-circle circle-2"></div>
+
+    <header class="header">
+        <div class="container header-content">
+           <div class="logo">
+                <img src="./assets/logo.png" class="logo-img">
+                <span class="logo-text">PlanIt</span>
+            </div>
+            <nav class="menu">
+                <a href="#features">Можливості</a>
+                <a href="#engineering">Архітектура</a>
+                <a href="#opensource">Open Source</a>
+            </nav>
+            <a href="#download" class="btn" style="padding: 8px 20px; font-size: 14px;">Завантажити</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="top-block">
+            <div class="container top-layout">
+                <div>
+                    <div class="status">
+                        v0.0.7 Dev Preview
+                    </div>
+                    <h1 class="main-title">Розклад, який <br><span class="color-text">працює на тебе</span></h1>
+                    <p class="sub-title">
+                        Демонстраційний прототип екосистеми для навчання. Ця версія знаходиться в активній розробці та створена як частина студентської роботи
+                    </p>
+                    
+                    <div class="buttons">
+                        <a href="#download" class="btn btn-shadow">
+                            Завантажити
+                        </a>
+                        <a href="#" class="btn btn-dark">
+                            Source Code
+                        </a>
+                    </div>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="num">Dev</span>
+                            <span class="txt">Статус</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="num">100%</span>
+                            <span class="txt">Open Source</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="num">Demo</span>
+                            <span class="txt">Mode</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-block">
+                    <div class="phone-img">
+                        <img src="./assets/adaptive-icon.jpg" class="screen-img">
+                    </div>
+                    
+                    <div class="icon-box icon-1">
+                        <img src="./assets/react.png">
+                    </div>
+
+                    <div class="icon-box icon-2">
+                        <img src="./assets/firebase.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="features" class="features">
+            <div class="container">
+                <div class="center-text">
+                    <span class="small-title">DEMO FUNCTIONALITY</span>
+                    <h2>Повний контроль над <span class="color-text">навчанням</span></h2>
+                    <p class="desc">
+                        PlanIt (Beta) демонструє адаптацію під розклад. Реалізовано базову підтримку графіків та персоналізації в тестовому режимі
+                    </p>
+                </div>
+
+                <div class="cards-wrap">
+                    
+                    <div class="card card-big">
+                        <div class="card-text">
+                            <h3>Уся інформація як на долоні</h3>
+                            <p>Миттєвий огляд дня: час, локація, тип заняття та викладач. Кожна картка створена для того, щоб ти витрачав мінімум часу на пошук потрібної інформації</p>
+                        </div>
+                        <div class="card-img-big">
+                            <img src="./assets/lesson_card.jpg">
+                        </div>
+                    </div>
+
+                    <div class="card card-long">
+                        <div class="img-box">
+                            <img src="./assets/lesson_details.jpg" class="img-cover">
+                        </div>
+                        <div class="card-text padded">
+                            <h3>Усі ресурси під рукою</h3>
+                            <p>Додавай лінки на Google Meet, Moodle або хмарні диски прямо в розклад. Переходь до навчання в один клік без пошуку посилань у чатах</p>
+                        </div>
+                    </div>
+
+                    <div class="card card-small">
+                        <div class="card-text">
+                            <h3>Циклічні тижні</h3>
+                            <p>Система автоматично вираховує поточний тиждень від дати старту. Підтримка будь-якої кількості тижнів у розкладі.</p>
+                        </div>
+                        <div>
+                            <div class="week-selector">
+                                <div class="week-btn">Тиждень 1</div>
+                                <div class="week-btn active">Тиждень 2</div>
+                                <div class="week-btn">Тиждень 3</div>
+                                <div class="week-btn">...</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-small gradient-box">
+                        <div class="card-text">
+                            <h3>Стиль та Градієнти</h3>
+                            <p>Створюй власний візуал: поєднуй ідеальну тему з персональними градієнтами для кожного заняття.</p>
+                        </div>
+                        <div class="circles">
+                            <div class="c c1"></div>
+                            <div class="c c2"></div>
+                            <div class="c c3"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="engineering" class="tech-part">
+            <div class="container">
+                <div class="center-text">
+                    <span class="small-title">ENGINEERING & DATA</span>
+                    <h2>Архітектура та <span class="color-text">Реалізація</span></h2>
+                    <p class="desc">
+                        Система побудована на базі React Native. Дані синхронізуються через Cloud Firestore.
+                    </p>
+                </div>
+
+                <div class="scroll-box">
+                    <div class="scroll-line">
+                        <div class="group">
+                            <span class="tag">React Native</span>
+                            <span class="div">•</span>
+                            <span class="tag">ES6+</span>
+                            <span class="div">•</span>
+                            <span class="tag">Firebase</span>
+                            <span class="div">•</span>
+                            <span class="tag">Figma</span>
+                            <span class="div">•</span>
+                            <span class="tag">Git</span>
+                            <span class="div">•</span>
+                        </div>
+                        <div class="group">
+                            <span class="tag">React Native</span>
+                            <span class="div">•</span>
+                            <span class="tag">ES6+</span>
+                            <span class="div">•</span>
+                            <span class="tag">Firebase</span>
+                            <span class="div">•</span>
+                            <span class="tag">Figma</span>
+                            <span class="div">•</span>
+                            <span class="tag">Git</span>
+                            <span class="div">•</span>
+                        </div>
+                        <div class="group">
+                            <span class="tag">React Native</span>
+                            <span class="div">•</span>
+                            <span class="tag">ES6+</span>
+                            <span class="div">•</span>
+                            <span class="tag">Firebase</span>
+                            <span class="div">•</span>
+                            <span class="tag">Figma</span>
+                            <span class="div">•</span>
+                            <span class="tag">Git</span>
+                            <span class="div">•</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="code-img">
+                    <img src="./assets/code.png">
+                </div>
+
+                <div class="info-blocks">
+                    <div class="info-card">
+                        <div class="info-text">
+                            <h4>Миттєвий відгук</h4>
+                            <p>Оптимізація двигуном Hermes для плавної роботи та швидкого запуску додатка.</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-text">
+                            <h4>Конфіденційність</h4>
+                            <p>Надійний захист даних на рівні бази Firestore — твій розклад під повним контролем.</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-text">
+                            <h4>Автономна робота</h4>
+                            <p>Повний доступ до розкладу без інтернету завдяки розумному локальному кешуванню.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="download" class="download-block">
+            <div class="container">
+                <div class="center-text">
+                    <h2>Обирай свою <span class="color-text">платформу.</span></h2>
+                    <p class="desc">PlanIt працює всюди, де тобі зручно. Починай з браузера або встановлюй додаток на свій смартфон.</p>
+                </div>
+            
+                <div class="devices-list">
+                    <div class="dev-item recomend">
+                        <div class="tag-top">READY</div>
+                        <div class="icon-circle">
+                            <img src="./assets/web.png">
+                        </div>
+                        <div class="dev-info">
+                            <h3>Web Версія</h3>
+                            <p>Миттєвий доступ до розкладу з будь-якого комп'ютера без встановлення.</p>
+                        </div>
+                        <a href="#" class="btn-dev">
+                            <span>Відкрити у браузері</span>
+                        </a>
+                    </div>
+                
+                    <div class="dev-item recomend">
+                        <div class="tag-top">LATEST BUILD</div>
+                        <div class="icon-circle">
+                            <img src="./assets/android.png">
+                        </div>
+                        <div class="dev-info">
+                            <h3>Android App</h3>
+                            <p>Повний функціонал, офлайн-режим та зручні сповіщення на твоєму смартфоні.</p>
+                        </div>
+                        <a href="#" class="btn-dev">
+                            <span>Завантажити .APK</span>
+                        </a>
+                    </div>
+                
+                    <div class="dev-item disabled">
+                        <div class="icon-circle">
+                            <img src="./assets/ios.png">
+                        </div>
+                        <div class="dev-info">
+                            <h3>iOS (iPhone)</h3>
+                            <p>Розробка вже триває. Підпишись, щоб дізнатися про реліз першим.</p>
+                        </div>
+                        <div class="btn-dev btn-gray">
+                            <span>Незабаром</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="bots-block">
+                    <div class="center-text">
+                        <h3>Екосистема PlanIt</h3>
+                        <p>Ми працюємо над тим, щоб твій розклад був інтегрований у твої улюблені месенджери.</p>
+                    </div>
+                
+                    <div class="bots-list">
+                        <div class="bot">
+                            <div class="tag-status">IN PROGRESS</div>
+                            <div class="icon-circle">
+                                <img src="./assets/telegram.png">
+                            </div>
+                            <div class="bot-info">
+                                <h3>Telegram Bot</h3>
+                                <p>Швидка перевірка пар та нагадування через чат-бота.</p>
+                            </div>
+                        </div>
+                    
+                        <div class="bot">
+                            <div class="tag-status">COMING SOON</div>
+                            <div class="icon-circle">
+                                <img src="./assets/discord.png">
+                            </div>
+                            <div class="bot-info">
+                                <h3>Discord Bot</h3>
+                                <p>Автоматичне оновлення розкладу прямо на сервері твоєї групи.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="bg-text">
+                <h1 class="big-text">PLANIT</h1>
+            </div>
+
+            <div class="container footer-content">
+                <div class="footer-top">
+                    <div class="col-brand">
+                        <div class="logo">
+                            <img src="./assets/logo.png" class="logo-img">
+                            <span class="logo-text">PlanIt</span>
+                        </div>
+
+                        <div class="lang-box">
+                            <div class="lang-current">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/250px-Flag_of_Ukraine.svg.png" class="flag">
+                                <span>Українська</span>
+                            </div>
+
+                            <div class="lang-dropdown">
+                                <div class="lang-opt">
+                                    <div class="lang-row">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/250px-Flag_of_Ukraine.svg.png" class="flag">
+                                        <span>Українська</span>
+                                    </div>
+                                </div>
+                                <div class="lang-opt">
+                                    <div class="lang-row">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/250px-Flag_of_the_United_Kingdom_%283-5%29.svg.png" class="flag">
+                                        <span>English</span>
+                                    </div>
+                                    <span class="soon">Скоро</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-links">
+                        <div class="col">
+                            <h5>Проект</h5>
+                            <a href="#">Завантажити Demo</a>
+                            <a href="#">Статус розробки</a>
+                            <a href="#" class="bold">PlanIt+</a>
+                        </div>
+                        
+                        <div class="col">
+                            <h5>Автор</h5>
+                            <a href="#">Про мене</a>
+                            <a href="#">Контакти</a>
+                            <a href="#">Партфоліо</a>
+                        </div>
+
+                        <div class="col">
+                            <h5>Ресурси</h5>
+                            <a href="#">GitHub</a>
+                            <a href="#">Figma</a>
+                            <a href="#">Dev Blog</a>
+                        </div>
+
+                        <div class="col">
+                            <h5>Інше</h5>
+                            <a href="#">Ліцензія</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bot">
+                    <div class="copyright">
+                        <p>2025 Artomk</p>
+                    </div>
+
+                    <div>
+                        <a href="#" class="btn btn-shadow">Зв'язатися з розробником</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

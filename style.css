@@ -290,7 +290,7 @@ a {
   color: #5865f2;
   font-size: 12px;
   font-weight: 800;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   display: block;
   margin-bottom: 10px;
 }
@@ -373,18 +373,17 @@ a {
   width: 90%;
   max-width: 280px;
   border-radius: 12px;
-  transform: rotate(-3deg) translateY(10px);
-  box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.5);
+  transform: translateY(10px);
   transition: 0.3s;
 }
 
 .card-big:hover .card-img-big img {
-  transform: rotate(0) scale(1.05);
+  transform: translateY(0px);
 }
 
 .card-long {
   grid-row: span 2;
-  padding: 0 !important;
+  padding: 0;
 }
 
 .img-box {
@@ -932,7 +931,7 @@ a {
   }
 
   .card-long {
-    grid-row: span 1;
+    grid-row: span 2;
     grid-column: span 1;
     min-height: 350px;
   }

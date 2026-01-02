@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlanIt</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,7 +13,7 @@
     <header class="header">
         <div class="container header-content">
            <div class="logo">
-                <img src="./assets/logo.png" class="logo-img">
+                <img src="./assets/logo.png" alt="PlanIt Logo" class="logo-img">
                 <span class="logo-text">PlanIt</span>
             </div>
             <nav class="menu">
@@ -23,7 +21,7 @@
                 <a href="#engineering">Архітектура</a>
                 <a href="#opensource">Open Source</a>
             </nav>
-            <a href="#download" class="btn" style="padding: 8px 20px; font-size: 14px;">Завантажити</a>
+            <a href="#download" class="btn" style="padding: 8px 20px; font-size: 14px;">Завантажити Demo</a>
         </div>
     </header>
 
@@ -34,14 +32,14 @@
                     <div class="status">
                         v0.0.7 Dev Preview
                     </div>
-                    <h1 class="main-title">Розклад, який <br><span class="color-text">працює на тебе</span></h1>
+                    <h1 class="main-title">Розклад, який <br><span class="color-text">працює на тебе.</span></h1>
                     <p class="sub-title">
-                        Демонстраційний прототип екосистеми для навчання.
+                        Демонстраційний прототип екосистеми для навчання. Ця версія знаходиться в активній розробці та створена як частина студентської роботи.
                     </p>
                     
                     <div class="buttons">
                         <a href="#download" class="btn btn-shadow">
-                            Завантажити
+                            Завантажити (Demo)
                         </a>
                         <a href="#" class="btn btn-dark">
                             Source Code
@@ -66,15 +64,15 @@
 
                 <div class="right-block">
                     <div class="phone-img">
-                        <img src="./assets/adaptive-icon.jpg" class="screen-img">
+                        <img src="./assets/adaptive-icon.jpg" alt="PlanIt App Interface" class="screen-img">
                     </div>
                     
                     <div class="icon-box icon-1">
-                        <img src="./assets/react.png">
+                        <img src="./assets/react.png" alt="React Native">
                     </div>
 
                     <div class="icon-box icon-2">
-                        <img src="./assets/firebase.png">
+                        <img src="./assets/firebase.png" alt="Firebase">
                     </div>
                 </div>
             </div>
@@ -83,10 +81,10 @@
         <div id="features" class="features">
             <div class="container">
                 <div class="center-text">
-                    <span class="small-title">FUNCTIONALITY</span>
+                    <span class="small-title">DEMO FUNCTIONALITY</span>
                     <h2>Повний контроль над <span class="color-text">навчанням</span></h2>
                     <p class="desc">
-                        PlanIt демонструє адаптацію під розклад. Реалізовано базову підтримку графіків та персоналізації в тестовому режимі
+                        PlanIt (Beta) демонструє адаптацію під розклад. Реалізовано базову підтримку графіків та персоналізації в тестовому режимі.
                     </p>
                 </div>
 
@@ -95,20 +93,20 @@
                     <div class="card card-big">
                         <div class="card-text">
                             <h3>Уся інформація як на долоні</h3>
-                            <p>Миттєвий огляд дня: час, локація, тип заняття та викладач. Кожна картка створена для того, щоб ти витрачав мінімум часу на пошук потрібної інформації</p>
+                            <p>Миттєвий огляд дня: час, локація, тип заняття та викладач. Кожна картка створена для того, щоб ти витрачав мінімум часу на пошук потрібної інформації.</p>
                         </div>
                         <div class="card-img-big">
-                            <img src="./assets/lesson_card.jpg">
+                            <img src="./assets/lesson_card.jpg" alt="Інтерфейс картки заняття">
                         </div>
                     </div>
 
                     <div class="card card-long">
                         <div class="img-box">
-                            <img src="./assets/lesson_details.jpg" class="img-cover">
+                            <img src="./assets/lesson_details.jpg" alt="Details" class="img-cover">
                         </div>
                         <div class="card-text padded">
                             <h3>Усі ресурси під рукою</h3>
-                            <p>Додавай лінки на Google Meet, Moodle або хмарні диски прямо в розклад. Переходь до навчання в один клік без пошуку посилань у чатах</p>
+                            <p>Додавай лінки на Google Meet, Moodle або хмарні диски прямо в розклад. Переходь до навчання в один клік без пошуку посилань у чатах.</p>
                         </div>
                     </div>
 
@@ -149,7 +147,7 @@
                     <span class="small-title">ENGINEERING & DATA</span>
                     <h2>Архітектура та <span class="color-text">Реалізація</span></h2>
                     <p class="desc">
-                        Система побудована на базі React Native. Дані синхронізуються через Cloud Firestore.
+                        Система побудована на базі <strong>React Native</strong> з використанням рушія <strong>Hermes</strong>. Дані синхронізуються через <strong>Cloud Firestore</strong> (Test Mode).
                     </p>
                 </div>
 
@@ -195,7 +193,7 @@
                 </div>
 
                 <div class="code-img">
-                    <img src="./assets/code.png">
+                    <img src="./assets/code.png" alt="Code">
                 </div>
 
                 <div class="info-blocks">
@@ -226,7 +224,6 @@
         <div id="download" class="download-block">
             <div class="container">
                 <div class="center-text">
-                    <span class="small-title">PLATFORMS</span>
                     <h2>Обирай свою <span class="color-text">платформу.</span></h2>
                     <p class="desc">PlanIt працює всюди, де тобі зручно. Починай з браузера або встановлюй додаток на свій смартфон.</p>
                 </div>
@@ -235,7 +232,7 @@
                     <div class="dev-item recomend">
                         <div class="tag-top">READY</div>
                         <div class="icon-circle">
-                            <img src="./assets/web.png">
+                            <img src="./assets/web.png" alt="Web Version">
                         </div>
                         <div class="dev-info">
                             <h3>Web Версія</h3>
@@ -249,7 +246,7 @@
                     <div class="dev-item recomend">
                         <div class="tag-top">LATEST BUILD</div>
                         <div class="icon-circle">
-                            <img src="./assets/android.png">
+                            <img src="./assets/android.png" alt="Android App">
                         </div>
                         <div class="dev-info">
                             <h3>Android App</h3>
@@ -262,7 +259,7 @@
                 
                     <div class="dev-item disabled">
                         <div class="icon-circle">
-                            <img src="./assets/ios.png">
+                            <img src="./assets/ios.png" alt="iOS App">
                         </div>
                         <div class="dev-info">
                             <h3>iOS (iPhone)</h3>
@@ -284,7 +281,7 @@
                         <div class="bot">
                             <div class="tag-status">IN PROGRESS</div>
                             <div class="icon-circle">
-                                <img src="./assets/telegram.png">
+                                <img src="./assets/telegram.png" alt="Telegram Bot">
                             </div>
                             <div class="bot-info">
                                 <h3>Telegram Bot</h3>
@@ -295,7 +292,7 @@
                         <div class="bot">
                             <div class="tag-status">COMING SOON</div>
                             <div class="icon-circle">
-                                <img src="./assets/discord.png">
+                                <img src="./assets/discord.png" alt="Discord Bot">
                             </div>
                             <div class="bot-info">
                                 <h3>Discord Bot</h3>
@@ -316,26 +313,26 @@
                 <div class="footer-top">
                     <div class="col-brand">
                         <div class="logo">
-                            <img src="./assets/logo.png" class="logo-img">
+                            <img src="./assets/logo.png" alt="PlanIt Logo" class="logo-img">
                             <span class="logo-text">PlanIt</span>
                         </div>
 
                         <div class="lang-box">
                             <div class="lang-current">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/250px-Flag_of_Ukraine.svg.png" class="flag">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/250px-Flag_of_Ukraine.svg.png" class="flag" alt="UA">
                                 <span>Українська</span>
                             </div>
 
                             <div class="lang-dropdown">
                                 <div class="lang-opt">
                                     <div class="lang-row">
-                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/250px-Flag_of_Ukraine.svg.png" class="flag">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/250px-Flag_of_Ukraine.svg.png" class="flag" alt="UA">
                                         <span>Українська</span>
                                     </div>
                                 </div>
                                 <div class="lang-opt">
                                     <div class="lang-row">
-                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/250px-Flag_of_the_United_Kingdom_%283-5%29.svg.png" class="flag">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/250px-Flag_of_the_United_Kingdom_%283-5%29.svg.png" class="flag" alt="UK">
                                         <span>English</span>
                                     </div>
                                     <span class="soon">Скоро</span>
@@ -375,7 +372,7 @@
 
                 <div class="footer-bot">
                     <div class="copyright">
-                        <p>2025 Artomk</p>
+                        <p>2025 ArtomkDev</p>
                     </div>
 
                     <div>
